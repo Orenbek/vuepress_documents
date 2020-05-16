@@ -2,7 +2,7 @@
 home: true
 heroImage: /hero.png
 heroText: Joe的文档
-tagline: 一个前端开发工程师的自我修养
+tagline: 一个前端萌新的成长之路
 actionText: 进入笔记 →
 actionLink: /front-end/javascript/
 features:

@@ -1,5 +1,5 @@
 module.exports = {
-  '/front-end/javascript': [
+  '/front-end': [
     {
       title: 'JavaScript',
       collapsable: true,
@@ -11,6 +11,10 @@ module.exports = {
         '/front-end/javascript/typeConvert',
         '/front-end/javascript/prototype',
         '/front-end/javascript/inherit',
+        '/front-end/javascript/handWrite',
+        '/front-end/javascript/this',
+        '/front-end/javascript/closure',
+        '/front-end/javascript/module',
       ]
     },
     {
@@ -18,7 +22,29 @@ module.exports = {
       collapsable: true,
       sidebarDepth: 2,
       children: [
-        ''
+        '/front-end/js-Object&Method/',
+        '/front-end/js-Object&Method/event,eventTarget',
+      ]
+    },
+    {
+      title: '浏览器',
+      collapsable: true,
+      sidebarDepth: 2,
+      children: [
+        '/front-end/browser/',
+        '/front-end/browser/web-cache',
+        '/front-end/browser/cross-origin',
+        '/front-end/browser/cross-page-communication',
+        '/front-end/browser/ajax-fetch-axios',
+      ]
+    },
+    {
+      title: 'CSS',
+      collapsable: true,
+      sidebarDepth: 2,
+      children: [
+        '/front-end/css/',
+        '/front-end/css/transform,transition,animation',
       ]
     },
   ]
