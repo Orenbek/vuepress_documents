@@ -11,9 +11,9 @@ module.exports = {
         '/front-end/javascript/typeConvert',
         '/front-end/javascript/prototype',
         '/front-end/javascript/inherit',
+        '/front-end/javascript/scope&closure',
         '/front-end/javascript/handWrite',
         '/front-end/javascript/this',
-        '/front-end/javascript/closure',
         '/front-end/javascript/module',
       ]
     },
@@ -45,6 +45,16 @@ module.exports = {
       children: [
         '/front-end/css/',
         '/front-end/css/transform,transition,animation',
+      ]
+    },
+    {
+      title: '框架',
+      collapsable: true,
+      sidebarDepth: 2,
+      children: [
+        '/front-end/framework/',
+        '/front-end/framework/computer&watcher',
+        '/front-end/framework/class&style',
       ]
     },
   ]
