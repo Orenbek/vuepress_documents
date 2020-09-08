@@ -9,7 +9,8 @@
     "build": "npx vuepress build docs"
   },
   "devDependencies": {
-    "vuepress": "^1.5.0"
+    "@vuepress/plugin-active-header-links": "^1.5.4",
+    "vuepress": "^1.5.4"
   },
   "dependencies": {
     "moment": "^2.25.3"

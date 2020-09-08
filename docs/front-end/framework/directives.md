@@ -3,21 +3,24 @@ title: 自定义指令
 ---
 
 ## 简介
+
 除了核心功能默认内置的指令 (v-model 和 v-show)，Vue 也允许注册自定义指令。注意，在 Vue2.0 中，代码复用和抽象的主要形式是组件。然而，有的情况下，你仍然需要对普通 DOM 元素进行底层操作，这时候就会用到自定义指令。举个聚焦输入框的例子：
 
 当页面加载时，该元素将获得焦点 (注意：`autofocus` 在移动版 Safari 上不工作)。事实上，只要你在打开这个页面后还没点击过任何内容，这个输入框就应当还是处于聚焦状态。现在让我们用指令来实现这个功能：
+
 ```js
 // 注册一个全局自定义指令 `v-focus`
-Vue.directive('focus', {
+Vue.directive("focus", {
   // 当被绑定的元素插入到 DOM 中时……
-  inserted: function (el) {
+  inserted: function(el) {
     // 聚焦元素
-    el.focus()
+    el.focus();
   }
-})
+});
 ```
 
 如果想注册局部指令，组件中也接受一个 `directives` 的选项：
+
 ```js
 directives: {
   focus: {
@@ -28,9 +31,11 @@ directives: {
   }
 }
 ```
+
 然后你可以在模板中任何元素上使用新的 `v-focus` property，如下：
+
 ```html
-<input v-focus>
+<input v-focus />
 ```
 
 ## 钩子函数
@@ -48,6 +53,7 @@ directives: {
 - unbind：只调用一次，指令与元素解绑时调用。
 
 ## 钩子函数参数
+
 指令钩子函数会被传入以下参数：
 
 - el：指令所绑定的元素，可以用来直接操作 DOM。
