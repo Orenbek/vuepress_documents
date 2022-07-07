@@ -13,6 +13,6 @@
     "vuepress": "^1.5.4"
   },
   "dependencies": {
-    "moment": "^2.25.3"
+    "moment": "^2.29.4"
   }
 }
